@@ -1,0 +1,109 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+# Date created = 21:29:59  November 29, 2017
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		stopwatch_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CSEMA5F31C6
+set_global_assignment -name TOP_LEVEL_ENTITY stopwatch
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "21:29:59  NOVEMBER 29, 2017"
+set_global_assignment -name LAST_QUARTUS_VERSION 13.1
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name BDF_FILE stopwatch.bdf
+set_global_assignment -name VERILOG_FILE sevenseg.v
+set_global_assignment -name VERILOG_FILE stopwatch_01.v
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_AF14 -to CLOCK_50
+set_location_assignment PIN_AE26 -to SEVENSEG0[0]
+set_location_assignment PIN_AH28 -to SEVENSEG0[6]
+set_location_assignment PIN_AG28 -to SEVENSEG0[5]
+set_location_assignment PIN_AF28 -to SEVENSEG0[4]
+set_location_assignment PIN_AG27 -to SEVENSEG0[3]
+set_location_assignment PIN_AE28 -to SEVENSEG0[2]
+set_location_assignment PIN_AE27 -to SEVENSEG0[1]
+set_location_assignment PIN_AD27 -to SEVENSEG1[6]
+set_location_assignment PIN_AF30 -to SEVENSEG1[5]
+set_location_assignment PIN_AF29 -to SEVENSEG1[4]
+set_location_assignment PIN_AG30 -to SEVENSEG1[3]
+set_location_assignment PIN_AH30 -to SEVENSEG1[2]
+set_location_assignment PIN_AH29 -to SEVENSEG1[1]
+set_location_assignment PIN_AJ29 -to SEVENSEG1[0]
+set_location_assignment PIN_AC30 -to SEVENSEG2[6]
+set_location_assignment PIN_AC29 -to SEVENSEG2[5]
+set_location_assignment PIN_AD30 -to SEVENSEG2[4]
+set_location_assignment PIN_AC28 -to SEVENSEG2[3]
+set_location_assignment PIN_AD29 -to SEVENSEG2[2]
+set_location_assignment PIN_AE29 -to SEVENSEG2[1]
+set_location_assignment PIN_AB23 -to SEVENSEG2[0]
+set_location_assignment PIN_AB22 -to SEVENSEG3[6]
+set_location_assignment PIN_AB25 -to SEVENSEG3[5]
+set_location_assignment PIN_AB28 -to SEVENSEG3[4]
+set_location_assignment PIN_AC25 -to SEVENSEG3[3]
+set_location_assignment PIN_AD25 -to SEVENSEG3[2]
+set_location_assignment PIN_AC27 -to SEVENSEG3[1]
+set_location_assignment PIN_AD26 -to SEVENSEG3[0]
+set_location_assignment PIN_W25 -to SEVENSEG4[6]
+set_location_assignment PIN_V23 -to SEVENSEG4[5]
+set_location_assignment PIN_W24 -to SEVENSEG4[4]
+set_location_assignment PIN_W22 -to SEVENSEG4[3]
+set_location_assignment PIN_Y24 -to SEVENSEG4[2]
+set_location_assignment PIN_Y23 -to SEVENSEG4[1]
+set_location_assignment PIN_AA24 -to SEVENSEG4[0]
+set_location_assignment PIN_AA25 -to SEVENSEG5[6]
+set_location_assignment PIN_AA26 -to SEVENSEG5[5]
+set_location_assignment PIN_AB26 -to SEVENSEG5[4]
+set_location_assignment PIN_AB27 -to SEVENSEG5[3]
+set_location_assignment PIN_Y27 -to SEVENSEG5[2]
+set_location_assignment PIN_AA28 -to SEVENSEG5[1]
+set_location_assignment PIN_V25 -to SEVENSEG5[0]
+set_global_assignment -name SDC_FILE stopwatch.sdc
+set_location_assignment PIN_AA14 -to KEY0
+set_location_assignment PIN_AA15 -to KEY1
+set_location_assignment PIN_W15 -to KEY2
+set_location_assignment PIN_V16 -to LED0
+set_location_assignment PIN_W16 -to LED1
+set_location_assignment PIN_V17 -to LED2
+set_location_assignment PIN_V18 -to LED3
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
