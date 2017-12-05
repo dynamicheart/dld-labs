@@ -17,8 +17,8 @@ module sc_cpu (clock,resetn,inst,mem,pc,wmem,alu,data);
    
    dff32 ip (npc,clock,resetn,pc);  // define a D-register for PC
    
-   // cla32 pcplus4 (pc,32¡¯h4, 1¡¯b0,p4);
-   // cla32 br_adr (p4,offset,1¡¯b0,adr);
+   // cla32 pcplus4 (pc,32'h4, 1'b0,p4);
+   // cla32 br_adr (p4,offset,1'b0,adr);
    
    assign p4 = pc + 32'h4;       // modified
    assign adr = p4 + offset;     // modified
