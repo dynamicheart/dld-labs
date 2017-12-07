@@ -53,9 +53,9 @@ module sc_cu (op, func, z, wmem, wreg, regrt, m2reg, aluc, shift,
    assign aluc[3] = i_sra;
    assign aluc[2] = i_sub | i_or | i_srl | i_sra | i_ori |
 						  i_beq | i_bne | i_lui;
-   assign aluc[1] = i_xor | i_sll | i_srl | i_sra | i_xori
+   assign aluc[1] = i_xor | i_sll | i_srl | i_sra | i_xori |
 						  i_lui;
-   assign aluc[0] = i_and | i_or | i_sll | i_srl | i_sra
+   assign aluc[0] = i_and | i_or | i_sll | i_srl | i_sra |
 						  i_andi | i_ori;
    assign shift   = i_sll | i_srl | i_sra ;
 
