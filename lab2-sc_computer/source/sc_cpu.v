@@ -10,9 +10,9 @@ module sc_cpu (clock,resetn,inst,mem,pc,wmem,alu,data);
    wire [1:0]    pcsource;
    wire          zero,wmem,wreg,regrt,m2reg,shift,aluimm,jal,sext;
    wire [31:0]   sa = { 27'b0, inst[10:6] }; // extend to 32 bits from sa for shift instruction
-   wire [31:0]   offset = {imm[13:0],inst[15:0],1'b0,1'b0};   //offset(include sign extend)
    wire          e = sext & inst[15];          // positive or negative sign at sext signal
    wire [15:0]   imm = {16{e}};                // high 16 sign bit
+	wire [31:0]   offset = {imm[13:0],inst[15:0],1'b0,1'b0};   //offset(include sign extend)
    wire [31:0]   immediate = {imm,inst[15:0]}; // sign extend to high 16
    
    dff32 ip (npc,clock,resetn,pc);  // define a D-register for PC
