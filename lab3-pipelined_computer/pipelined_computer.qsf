@@ -1,0 +1,137 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+# Date created = 07:10:46  December 31, 2017
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		pipelined_computer_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CSEMA5F31C6
+set_global_assignment -name TOP_LEVEL_ENTITY pipelined_computer
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "07:10:46  DECEMBER 31, 2017"
+set_global_assignment -name LAST_QUARTUS_VERSION 13.1
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VERILOG_FILE source/num2sevenseg.v
+set_global_assignment -name VERILOG_FILE source/clock_gen.v
+set_global_assignment -name VERILOG_FILE source/pipelined_computer_main.v
+set_global_assignment -name VERILOG_FILE source/sevenseg.v
+set_global_assignment -name VERILOG_FILE source/regfile.v
+set_global_assignment -name VERILOG_FILE source/pipepc.v
+set_global_assignment -name VERILOG_FILE source/pipemwreg.v
+set_global_assignment -name VERILOG_FILE source/pipemem.v
+set_global_assignment -name VERILOG_FILE source/pipeir.v
+set_global_assignment -name VERILOG_FILE source/pipeif.v
+set_global_assignment -name VERILOG_FILE source/pipeidcu.v
+set_global_assignment -name VERILOG_FILE source/pipeid.v
+set_global_assignment -name VERILOG_FILE source/pipeexe.v
+set_global_assignment -name VERILOG_FILE source/pipeemreg.v
+set_global_assignment -name VERILOG_FILE source/pipedereg.v
+set_global_assignment -name VERILOG_FILE source/mux4x32.v
+set_global_assignment -name VERILOG_FILE source/mux2x32.v
+set_global_assignment -name VERILOG_FILE source/mux2x5.v
+set_global_assignment -name VERILOG_FILE source/lpm_rom_irom.v
+set_global_assignment -name VERILOG_FILE source/lpm_ram_dq_dram.v
+set_global_assignment -name VERILOG_FILE source/io_output_reg.v
+set_global_assignment -name VERILOG_FILE source/io_input_reg.v
+set_global_assignment -name VERILOG_FILE source/dffe32.v
+set_global_assignment -name VERILOG_FILE source/dff32.v
+set_global_assignment -name VERILOG_FILE source/cla32.v
+set_global_assignment -name VERILOG_FILE source/alu.v
+set_global_assignment -name BDF_FILE source/pipelined_computer.bdf
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_AD10 -to INPORT0[3]
+set_location_assignment PIN_AC9 -to INPORT0[2]
+set_location_assignment PIN_AE11 -to INPORT0[1]
+set_location_assignment PIN_AD12 -to INPORT0[0]
+set_location_assignment PIN_AD11 -to INPORT1[4]
+set_location_assignment PIN_AF10 -to INPORT1[3]
+set_location_assignment PIN_AF9 -to INPORT1[2]
+set_location_assignment PIN_AC12 -to INPORT1[1]
+set_location_assignment PIN_AB12 -to INPORT1[0]
+set_location_assignment PIN_AA25 -to OUTPORT0_HIGH[6]
+set_location_assignment PIN_AA26 -to OUTPORT0_HIGH[5]
+set_location_assignment PIN_AB26 -to OUTPORT0_HIGH[4]
+set_location_assignment PIN_AB27 -to OUTPORT0_HIGH[3]
+set_location_assignment PIN_Y27 -to OUTPORT0_HIGH[2]
+set_location_assignment PIN_AA28 -to OUTPORT0_HIGH[1]
+set_location_assignment PIN_V25 -to OUTPORT0_HIGH[0]
+set_location_assignment PIN_W25 -to OUTPORT0_LOW[6]
+set_location_assignment PIN_V23 -to OUTPORT0_LOW[5]
+set_location_assignment PIN_W24 -to OUTPORT0_LOW[4]
+set_location_assignment PIN_W22 -to OUTPORT0_LOW[3]
+set_location_assignment PIN_Y24 -to OUTPORT0_LOW[2]
+set_location_assignment PIN_Y23 -to OUTPORT0_LOW[1]
+set_location_assignment PIN_AA24 -to OUTPORT0_LOW[0]
+set_location_assignment PIN_AB22 -to OUTPORT1_HIGH[6]
+set_location_assignment PIN_AB25 -to OUTPORT1_HIGH[5]
+set_location_assignment PIN_AB28 -to OUTPORT1_HIGH[4]
+set_location_assignment PIN_AC25 -to OUTPORT1_HIGH[3]
+set_location_assignment PIN_AD25 -to OUTPORT1_HIGH[2]
+set_location_assignment PIN_AC27 -to OUTPORT1_HIGH[1]
+set_location_assignment PIN_AD26 -to OUTPORT1_HIGH[0]
+set_location_assignment PIN_AC30 -to OUTPORT1_LOW[6]
+set_location_assignment PIN_AC29 -to OUTPORT1_LOW[5]
+set_location_assignment PIN_AD30 -to OUTPORT1_LOW[4]
+set_location_assignment PIN_AC28 -to OUTPORT1_LOW[3]
+set_location_assignment PIN_AD29 -to OUTPORT1_LOW[2]
+set_location_assignment PIN_AE29 -to OUTPORT1_LOW[1]
+set_location_assignment PIN_AB23 -to OUTPORT1_LOW[0]
+set_location_assignment PIN_AD27 -to OUTPORT2_HIGH[6]
+set_location_assignment PIN_AF30 -to OUTPORT2_HIGH[5]
+set_location_assignment PIN_AF29 -to OUTPORT2_HIGH[4]
+set_location_assignment PIN_AG30 -to OUTPORT2_HIGH[3]
+set_location_assignment PIN_AH30 -to OUTPORT2_HIGH[2]
+set_location_assignment PIN_AH29 -to OUTPORT2_HIGH[1]
+set_location_assignment PIN_AJ29 -to OUTPORT2_HIGH[0]
+set_location_assignment PIN_AH28 -to OUTPORT2_LOW[6]
+set_location_assignment PIN_AG28 -to OUTPORT2_LOW[5]
+set_location_assignment PIN_AF28 -to OUTPORT2_LOW[4]
+set_location_assignment PIN_AG27 -to OUTPORT2_LOW[3]
+set_location_assignment PIN_AE28 -to OUTPORT2_LOW[2]
+set_location_assignment PIN_AE27 -to OUTPORT2_LOW[1]
+set_location_assignment PIN_AE26 -to OUTPORT2_LOW[0]
+set_location_assignment PIN_AF14 -to CLOCK_50
+set_location_assignment PIN_AE12 -to INPORT0[4]
+set_location_assignment PIN_AA14 -to CLRN
+set_location_assignment PIN_AA15 -to RESETN
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
